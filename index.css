@@ -65,18 +65,27 @@ body {
 .is-tab-page-active{
     display: block;
     width: 90%;
-    background-color: aqua;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+
     .item{
-        margin: 40px 0px;
+        /* margin: 40px 0px; */
         border: 2px solid #000;
         border-radius: 8px;
+        font-family: "Kiwi Maru", serif;font-weight: 400;
+        font-style: normal;
     }
 }
 .explain{
-    background-color: #FFFF00;
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 8px 8px 0px 0px;
 }
 .answer{
-    background-color: #d95428;
+    background-color: #cccccc;
+    padding: 12px;
+    border-radius: 0px 0px 8px 8px;
 }
 
