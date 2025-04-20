@@ -44,14 +44,17 @@ body {
     margin: 0 auto;
 }
 .tab-btn{
-    font-family: "Source Code Pro", monospace;
+    font-family: "Kiwi Maru", serif;
+    font-weight: 400;
+    font-style: normal;
     background-color: #ffffff;
     border: 2px solid #000;
     border-radius: 16px;
-    width: 84px;
+    /* width: 84px; */
+    width: clamp(92px,120px,160px);
     height: 24px;
     text-align: center;
-    line-height: 24px;
+    line-height: 22px;
     box-shadow: 4px 4px 4px #9c9c9c4f;
     cursor: pointer;
 }
@@ -74,7 +77,8 @@ body {
         /* margin: 40px 0px; */
         border: 2px solid #000;
         border-radius: 8px;
-        font-family: "Kiwi Maru", serif;font-weight: 400;
+        font-family: "Kiwi Maru", serif;
+        font-weight: 400;
         font-style: normal;
     }
 }
