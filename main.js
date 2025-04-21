@@ -23,6 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     answerDiv.classList.add("answer");
                     answerDiv.textContent = item.answer;
 
+                    // ✅ イベント設定
+                    explainDiv.addEventListener("click", () => {
+                        explainDiv.classList.toggle("is-explain-active");
+                        answerDiv.classList.toggle("is-answer-active");
+                    });
+
                     itemDiv.appendChild(explainDiv);
                     itemDiv.appendChild(answerDiv);
 
@@ -70,16 +76,33 @@ document.addEventListener("DOMContentLoaded", function () {
 //         });
 //     });
 // });
-document.querySelectorAll('.explain').forEach((explainEl) => {
-    explainEl.addEventListener('click', () => {
-      // 自身のクラスをトグル
-      explainEl.classList.toggle('is-explain-active');
-  
-      // 次の兄弟要素が.answerであることを前提
-      const answerEl = explainEl.nextElementSibling;
-      if (answerEl && answerEl.classList.contains('answer')) {
-        answerEl.classList.toggle('is-answer-active');
-      }
-    });
-  });
-  
+
+
+
+// document.querySelectorAll('.explain').forEach((explainEl) => {
+//     explainEl.addEventListener('click', () => {
+//       // 自身のクラスをトグル
+//       explainEl.classList.toggle('is-explain-active');
+
+//       // 次の兄弟要素が.answerであることを前提
+//       const answerEl = explainEl.nextElementSibling;
+//       if (answerEl && answerEl.classList.contains('answer')) {
+//         answerEl.classList.toggle('is-answer-active');
+//       }
+//     });
+//   });
+
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     document.querySelectorAll('.explain').forEach((explainEl) => {
+//       explainEl.addEventListener('click', () => {
+//         explainEl.classList.toggle('is-explain-active');
+//         const answerEl = explainEl.nextElementSibling;
+//         if (answerEl && answerEl.classList.contains('answer')) {
+//           answerEl.classList.toggle('is-answer-active');
+//         }
+//       });
+//     });
+//   });
+
