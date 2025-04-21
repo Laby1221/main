@@ -75,28 +75,28 @@ body {
 
     .item{
         /* margin: 40px 0px; */
-        border: 2px solid #000;
-        border-radius: 8px;
+        /* border: 2px solid #000; */
+        /* border-radius: 8px; */
         font-family: "Kiwi Maru", serif;
         font-weight: 400;
         font-style: normal;
+        background-color: transparent;
     }
 }
 .explain{
     background-color: #ffffff;
     padding: 12px;
+    border: 2px solid #000;
     border-radius: 8px 8px 0px 0px;
-    .is-explain-active{
-        font-weight: bold;
-    }
 }
 .answer{
     display: none;
-    .is-answer-active{
-        display: block;
-        background-color: #cccccc;
-        padding: 12px;
-        border-radius: 0px 0px 8px 8px;
-    }
 }
-
+.is-answer-active{
+    display: block;
+    background-color: #cccccc;
+    padding: 12px;
+    border: 2px solid #000;
+    border-width:0px 2px 2px 2px;
+    border-radius: 0px 0px 8px 8px;
+}
