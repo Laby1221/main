@@ -1,6 +1,6 @@
 // page データ挿入
 document.addEventListener("DOMContentLoaded", function () {
-    fetch('main.json')
+    fetch('science.json')
         .then(response => response.json())
         .then(data => {
             const processTab = (tabKey, containerId) => {
